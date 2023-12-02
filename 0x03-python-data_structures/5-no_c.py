@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+# 5-no_c.py
+# Simon Tagbor <simontagbor360@gmail.com>
+
 def no_c(my_string):
-    new_string = ""
-    for elements in my_string:
-        if elements != "c" and elements != "C":
-            new_string += elements
-     return new_string
+    wit_noc = ""
+    for ch in list(my_string):
+        if ch not in 'cC':
+            wit_noc += ch
+    return (wit_noc)
